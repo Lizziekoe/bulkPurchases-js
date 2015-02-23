@@ -1,0 +1,32 @@
+img {
+  width: 50%;
+  height: 50%;
+}
+
+img:hover {
+  background-color: #FFF;
+}
+
+.center {
+  text-align: center;
+}
+
+.red {
+  color: #FF4747;
+}
+
+.green {
+  color: #75E3AC;
+}
+
+.blue {
+  color: #85C2FF;
+}
+
+.yellow {
+  color: #FFFF99;
+}
+
+.click {
+  background-color: #FFF;
+}
