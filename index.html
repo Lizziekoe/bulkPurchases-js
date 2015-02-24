@@ -53,8 +53,16 @@
     </div>
     <div class="row" ng-show="color">
       <h2>Enter Quantity</h2>
-      <h3>{{size}}<h3>
-      <input class="form-control" id="scrollTest" type="number" min="1" required>
+        <form class="form-inline" ng-submit="addShirt()" role="form">
+          <div class="form-group">
+            <input class="form-control" type="number" min="1" required>
+          </div>
+            <button type="submit" class="btn btn-success">Add Purchase</button>
+        </form>
+        <div id="purchase">
+          <p>Color: {{color}}</p>
+          <p>Size: {{size}}</p>
+        </div>
     </div>
   </div>
 </body>

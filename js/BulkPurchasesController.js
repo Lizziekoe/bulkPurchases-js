@@ -1,7 +1,8 @@
 bulkShirts.controller('ShirtsCtrl', function ShirtsCtrl($scope) {
   $scope.shirts = [];
   $scope.addShirt = function() {
-    $scope.shirts.push({ size: "{{size}}", color: "{{color}}"} )
+    $scope.shirts.push({ size: $scope.size, color: $scope.color, quantity: 0})
+    $("#purchase").show();
   };
 
   $(document).ready(function() {

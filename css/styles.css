@@ -30,3 +30,7 @@ img:hover {
 .click {
   background-color: #FFF;
 }
+
+#purchase {
+  display: none;
+}
