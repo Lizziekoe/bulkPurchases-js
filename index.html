@@ -13,13 +13,13 @@
 <body>
   <div class="container" ng-controller="ShirtsCtrl">
     <div class="jumbotron">
-      <h2>Liz And Al's T-shirt Co.</h2>
+      <h2 id="title">Liz And Al's T-shirt Co.</h2>
     </div>
     <div class="row center">
       <h2>Choose Your Size:</h2>
       <div class="col-xs-4 center">
         <h3>Small</h3>
-        <img src="css/tshirt.png" ng-class="{white: click}" ng-model="click" ng-click="size = 's'" ng-init="size = ''">
+        <img src="css/tshirt.png" ng-click="size = 's'">
       </div>
       <div class="col-xs-4 center">
         <h3>Medium</h3>
@@ -31,25 +31,30 @@
       </div>
     </div>
     <div class="row center" ng-show="size">
-      <h2>Choose Your Color:</h2>
+      <h2 id="color">Choose Your Color:</h2>
       <div class="col-xs-2">
-        <h4 class="red">Red</h4>
+        <h2 class="red color" ng-click="color = 'r'">Red</h2>
       </div>
         <div class="col-xs-1">
         </div>
       <div class="col-xs-2">
-        <h4 class="green">Green</h4>
+        <h2 class="green color" ng-click="color = 'g'">Green</h2>
       </div>
         <div class="col-xs-1">
         </div>
       <div class="col-xs-2">
-        <h4 class="blue">Blue</h4>
+        <h2 class="blue color" ng-click="color = 'b'">Blue</h2>
       </div>
         <div class="col-xs-1">
         </div>
       <div class="col-xs-2">
-        <h4 class="yellow">Yellow</h4>
+        <h2 class="yellow color" ng-click="color = 'y'">Yellow</h2>
       </div>
+    </div>
+    <div class="row" ng-show="color">
+      <h2>Enter Quantity</h2>
+      <h3>{{size}}<h3>
+      <input class="form-control" id="scrollTest" type="number" min="1" required>
     </div>
   </div>
 </body>
